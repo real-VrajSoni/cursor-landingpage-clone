@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #131313;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+   
+    position: fixed;
+    top: 0px;    
+    width: 92%;
+    background-color: #131313;
+    z-index: 1000;
+    left: 0;
+    
+}
+.logo-name{
+    font-size: 24px;
+    font-weight: bold;
+}
+nav div a{
+    
+    text-decoration: none;
+    color: #edecec;
+    margin: auto 10px;
+    padding: auto;
+    font-size: 14px;
+
+}
+nav div a:hover{
+    color: rgb(173, 167, 167);
+    font-weight: lighter;
+}
+
+.signin-button{
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 0.5px solid white;
+    cursor:pointer;
+}
+.download-button{
+    background-color: white;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor:pointer;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto 20px;
+    gap: 30px;
+    margin-left: 60px;
+    padding-top: 150px;
+    
+}
+.main-slogan p{
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    
+}
+main div button{
+    align-items: center;
+    background-color: white;
+    color: rgb(74, 71, 71);
+    padding: 16px 32px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor:pointer;
+    font-size: 16px;
+    padding: 11px 30px;
+    transition: transform 0.2s;
+    
+}
+.hero-image{
+    width: 1320px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+.our-clients p {
+    width: 100%;                /* Forces text to take the full top row */
+    text-align: center;         /* Centers the text */
+    color: #A1A1A1;             /* Light grey text */
+    font-size: 16px;
+    margin-bottom: 15px;        /* Push the cards down away from text */
+    font-weight: 500;
+}
+
+.our-clients{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    max-width: 1500px;
+    margin: 40px auto;          /* Centers the whole block */
+    padding: 0 20px;
+    /* margin-top: 70px; */
+}
+
+.client-card{
+    background-color: #f2f1ed;
+    width: 130px;               
+    height: 70px;              
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.client-card img{
+    text-align: center;;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    padding: 10px;
+    opacity: 0.8;
+    /* filter: brightness(0); */
+    filter: grayscale(100%) brightness(0);
+}
+.client-card:hover {
+    background-color: #ffffff;  /* Bright white on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+.client-card:hover img {
+    opacity: 1;}
+
+
+.feature-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+   background-color: #f6f6f6;  /* The light grey background color */
+    color: #000000;             /* Text needs to be black now, not white */
+    
+    width: 100%;
+    max-width: 1320px;        
+    height: 750px;
+    margin: 80px;       
+                
+    border-radius: 6px;      
+    overflow: hidden;
+}
+.feature-section :hover{
+    cursor: pointer;
+}
+
+.feature-text{
+    width: 43%;
+    padding-left: 45px;
+    padding-right: 10px;
+}
+
+.feature-image {
+    width: 100%; 
+    height: 95%;   
+    display: flex;
+    justify-content: flex-end;        
+    align-items: flex-end;   
+    flex-direction: column;
+    padding-right: 20px;
+}
+.feature-image img {
+    width: 100%; 
+    height: 100%;  
+    
+    
+}
+
+.testimonials{
+     display: grid;
+    /* grid-template-rows: 1fr 1fr; */
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+max-width: 1350px;
+margin: 80px auto;
+padding: 0 20px;
+}
+
+.client-review{
+    background-color: #272525;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    min-height: 250px;
+    transition: transform 0.2s;
+}
+
+.client-photo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.client-photo div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cursor-function{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1320px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.function-card {
+    background-color: #111;    /* Very dark grey (almost black) */
+    border: 1px solid #222;    /* Subtle border */
+    border-radius: 16px;       /* Rounded corners */
+    overflow: hidden;          /* Crops images that are too big */
+    
+    display: flex;
+    flex-direction: column;    /* Stacks text on top, image on bottom */
+    justify-content: space-between;
+    
+    height: 550px;  
+             /* Fixed height for uniformity */
+    transition: border-color 0.2s;
+}
+
+.function-text{
+    padding: 30px 30px 0 30px;
+}
+.funtion-image {
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.funtion-image img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;         /* Ensures the image covers the area without distortion */
+    display: block;
+    max-height: 300px;
+    mask-image: linear-gradient();
+}
+
+.changelog{
+   display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1320px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.logcards{
+    background-color: #313131;    /* Very dark grey (almost black) */
+    border: 1px solid #222;    /* Subtle border */
+    border-radius: 16px;       /* Rounded corners */
+    overflow: hidden;          /* Crops images that are too big */
+    height: 120px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ekimage :hover{
+    transform: scale(1.05);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+/* 1. FOOTER CONTAINER */
+footer {
+    border-top: 1px solid #222; /* Subtle separator line at top */
+    background-color: #000;     /* Pure black background */
+    padding: 80px 0 40px 0;     /* Big space on top, smaller on bottom */
+    margin-top: 100px;          /* Pushes footer away from content above */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 2. THE 5-COLUMN GRID */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 Equal Columns */
+    gap: 40px;
+    margin-bottom: 100px;       /* Space between links and bottom bar */
+}
+
+.footer-col h4 {
+    color: #666;                /* Dark Grey Title */
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.footer-col a {
+    display: block;             /* Puts each link on its own line */
+    color: #999;                /* Light Grey Links */
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 12px;        /* Space between links */
+    transition: color 0.2s;
+}
+
+.footer-col a:hover {
+    color: #fff;                /* White on hover */
+}
+
+/* 3. BOTTOM BAR (Copyright & Language) */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between; /* Pushes content to Left & Right edges */
+    align-items: center;
+    border-top: 1px solid #111;     /* Very subtle line */
+    padding-top: 30px;
+    color: #555;
+    font-size: 13px;
+}
+
+.footer-left {
+    display: flex;
+    gap: 20px;
+}
+
+.soc2::before {
+    content: "🔒";               /* Adds a little lock icon */
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+/* 4. LANGUAGE BUTTON */
+.lang-btn {
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
